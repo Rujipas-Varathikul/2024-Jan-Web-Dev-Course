@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Form Practice</title>
+  </head>
+  <body>
+    <h1>Form Elements</h1>
+    <form autocomplete="on">
+      <label
+        >Fullname <input type="text" name="name" size="30" autocomplete="name"
+      /></label>
+
+      <label for="fullname">Fullname</label>
+      <input
+        id="fullname"
+        type="text"
+        name="name"
+        size="30"
+        autocomplete="name"
+        placeholder="Rujipas Varathikul"
+      />
+
+      <label for="test-score">O-NET Test Score</label>
+      <input id="test-score" type="number" name="test-score" value="50" />
+      <label for="rating">Rating</label>
+      <input id="rating" type="range" name="rating" max="5" min="0" />
+
+      <br />
+      <label for="email">Email</label>
+      <input id="email" type="email" name="email" autocomplete="email" />
+      <label for="web-link">Link to Your Website</label>
+      <input id="web-link" type="url" name="web-link" />
+      <label for="tel">Telephone Number</label>
+      <input id="tel" type="tel" name="tel" autocomplete="tel" />
+
+      <br />
+      <label for="birthday">Birthday</label>
+      <input id="birthday" type="date" name="birthday" autocomplete="bday" />
+      <label for="password">Your Password</label>
+      <input
+        id="password"
+        type="password"
+        name="password"
+        autocomplete="current-password"
+      />
+      <label for="query">Tell us what you want to find.</label>
+      <input id="query" type="search" name="query" />
+      <br />
+
+      <label for="bg-color">Background</label>
+      <input id="bg-color" type="color" name="bg-color" />
+      <label for="birth-cer">Birth Certificate</label>
+      <input id="birth-cer" type="file" name="birth-cer" />
+      <br />
+
+      <label for="essay">Essay</label>
+      <textarea id="essay" cols="50" rows="5">Enter your text here</textarea>
+
+      <br />
+      <fieldset>
+        <legend>Food that you like</legend>
+        <label for="mama">Instant Noodle (MaMa)</label>
+        <input id="mama" name="food" type="checkbox" />
+        <br />
+        <label for="chocolate">Chocolate</label>
+        <input id="chocolate" name="food" type="checkbox" checked />
+        <br />
+        <label for="kao-man-gai">Kao Man Gai</label>
+        <input id="kao-man-gai" name="food" type="checkbox" />
+        <br />
+        <label for="grilled-squid">Grilled Squid</label>
+        <input id="grilled-squid" name="food" type="checkbox" />
+      </fieldset>
+      <fieldset>
+        <legend>Food that you like</legend>
+        <input id="mama-radio" name="food" type="radio" />
+        <label for="mama-radio">Instant Noodle (MaMa)</label>
+        <br />
+        <label for="chocolate-radio">Chocolate</label>
+        <input id="chocolate-radio" name="food" type="radio" />
+        <br />
+        <label for="kao-man-gai-radio">Kao Man Gai</label>
+        <input id="kao-man-gai-radio" name="food" type="radio" />
+        <br />
+        <label for="grilled-squid-radio">Grilled Squid</label>
+        <input id="grilled-squid-radio" name="food" type="radio" />
+      </fieldset>
+      <label for="food-select">Food that you like</label>
+      <select id="food-select" multiple>
+        <option>Instant Noodle (MaMa)</option>
+        <option>Chocolate</option>
+        <option>Kao Man Gai</option>
+        <option>Grilled Squid</option>
+      </select>
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>

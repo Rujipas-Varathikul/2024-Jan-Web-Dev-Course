@@ -1,0 +1,105 @@
+/* -------------- Global ---------- */
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  /* The syntax is --name-of-variable: value; */
+  --white: #fffffa;
+  --black: #131b23;
+  --orange: #f05219;
+  --secondary-clr: #119da4;
+  --tertiary-clr: #8f7f89;
+
+  --regular-font: 400;
+  --bold-font: 700;
+
+  --h1-fontsize: 4rem;
+  --h2-fontsize: 2rem;
+  --h3-fontsize: 1.25rem;
+  --regular-fontsize: 1rem;
+  --small-fontsize: 0.75rem;
+}
+
+body {
+  margin: 0px;
+
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-weight: var(--regular-font);
+  line-height: 1.5;
+  color: var(--black);
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+/* -------------- Reusable ---------- */
+.button-filled {
+  display: block;
+  padding: 0.45rem 0.625rem;
+  border: 2px solid var(--orange);
+  border-radius: 8px;
+
+  text-decoration: none;
+
+  background-color: var(--orange);
+  color: var(--white);
+}
+
+.button-filled:hover,
+.button-filled:focus-visible {
+  background-color: transparent;
+  color: var(--orange);
+}
+
+/* -------------- Specific Elements ---------- */
+header {
+  position: sticky;
+  top: 0px;
+
+  background-color: var(--white);
+}
+
+nav {
+  padding: 0px;
+  margin: 0px;
+}
+
+nav > ul {
+  display: flex;
+  flex-direction: row;
+  padding: 0px;
+  margin: 0px;
+
+  justify-content: center;
+  align-items: center;
+
+  list-style: none;
+}
+
+nav a {
+  display: inline-block;
+  padding: 1.5rem 1.25rem;
+
+  font-weight: var(--bold-font);
+  color: var(--black);
+
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: #8f7f8920;
+}
+
+nav a:focus-visible {
+  background-color: #8f7f8920;
+  outline: 2px solid var(--orange);
+}
+
+nav li:last-child {
+  position: absolute;
+  right: 80px;
+}

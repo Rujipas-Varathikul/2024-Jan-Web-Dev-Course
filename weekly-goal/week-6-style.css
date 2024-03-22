@@ -1,0 +1,57 @@
+header,
+main,
+footer,
+nav,
+article,
+aside,
+section {
+  outline: 1px solid black;
+}
+
+header,
+main,
+footer {
+  padding: 10px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav {
+  width: 90%;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: space-around;
+}
+
+p {
+  max-width: 80ch;
+}
+
+.two-column {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+section,
+aside,
+article {
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.three-column {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+h2 {
+  display: inline;
+  width: fit-content;
+}
